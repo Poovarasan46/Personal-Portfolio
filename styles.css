@@ -571,7 +571,7 @@ Skills
 .skill-text-90 {
   left: 80%;
 }
-.skill-text-50 {
+.skill-text-30 {
   left: 30%;
 }
 .skill-text-80 {
@@ -592,6 +592,10 @@ Footer
   place-items: center;
 }
 .footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 3rem;
   margin-bottom: 2rem;
 }
 .footer .social-icon {
