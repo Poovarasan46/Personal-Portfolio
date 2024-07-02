@@ -527,6 +527,7 @@ Skills
 .skills h3 {
   margin: 1.5rem 0;
   color: var(--clr-primary-1);
+  letter-spacing: 0.1rem;
 }
 .skill {
   margin-bottom: 1.25rem;
@@ -552,14 +553,26 @@ Skills
   width: 50%;
   border-radius: var(--radius);
 }
-.value-90 {
-  width: 80%;
+.value-95 {
+  width: 95%;
 }
-.value-50 {
+.value-70 {
+  width: 70%;
+}
+.value-85 {
+  width: 85%;
+}
+.value-60 {
+  width: 60%;
+}
+.value-90 {
+  width: 90%;
+}
+.value-30 {
   width: 30%;
 }
 .value-80 {
-  width: 90%;
+  width: 80%;
 }
 .skill-text {
   position: absolute;
@@ -568,18 +581,119 @@ Skills
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+.skill-text-95 {
+  left: 95%;
+}
+.skill-text-70 {
+  left: 70%;
+}
+.skill-text-85 {
+  left: 85%;
+}
+.skill-text-60 {
+  left: 60%;
+}
 .skill-text-90 {
-  left: 80%;
+  left: 90%;
 }
 .skill-text-30 {
   left: 30%;
 }
 .skill-text-80 {
-  left: 90%;
+  left: 80%;
 }
 .download {
   margin: 0 auto;
 }
+/*
+=============== 
+Projects
+===============
+*/
+.wrapper {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #666;
+}
+
+.card button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.card button:hover {
+  border-color: #888;
+}
+
+.dark-bg {
+  background-color: #333;
+  color: white;
+}
+
+.dark-bg p {
+  color: #ccc;
+}
+
+.light-bg {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+}
+.boton-l:hover {
+  transition: all 1s;
+  background-color: black;
+  color: white;
+}
+.boton {
+  color: white;
+}
+.boton:hover {
+  transition: all 1s;
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*
+=============== 
+End of projects
+===============
+*/
 /*
 =============== 
 Footer
@@ -594,9 +708,9 @@ Footer
 .footer .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
   gap: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .footer .social-icon {
   color: var(--clr-primary-5);
