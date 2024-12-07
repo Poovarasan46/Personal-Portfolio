@@ -414,6 +414,7 @@ About
 }
 .about-img {
   justify-self: center;
+  margin-bottom: 4rem;
 }
 @media screen and (min-width: 992px) {
   .about-center {
@@ -523,6 +524,7 @@ Skills
 }
 .skills {
   background: var(--clr-primary-9);
+  padding-bottom: 13rem;
 }
 .skills h3 {
   margin: 1.5rem 0;
@@ -598,21 +600,43 @@ Skills
 Projects
 ===============
 */
-.wrapper {
+/* .wrapper {
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+} */
+.project-section {
+  background-color: #f0f0f0;
 }
-
+.project-section-title {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.project-section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.project-underline {
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  max-width: 900px;
+  max-width: 950px;
   width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
 }
 
 .card {
@@ -688,7 +712,7 @@ Footer
 ===============
 */
 .footer {
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   background: #222;
   display: grid;
   place-items: center;
@@ -696,7 +720,7 @@ Footer
 .footer .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   gap: 3rem;
   margin-bottom: 1rem;
 }
