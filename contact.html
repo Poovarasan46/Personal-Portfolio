@@ -17,66 +17,58 @@
   </head>
 
   <body>
-    <!-- navbar -->
-    <nav class="nav" id="nav">
-      <div class="nav-center">
-        <!-- nav header -->
-        <div class="nav-header">
-          <button class="nav-btn" id="nav-btn">
-            <i class="fas fa-bars"></i>
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <!-- ############## -->
+    <div class="contact-container">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr />
+        </div>
+        <input
+          type="hidden"
+          name="access_key"
+          value="51a83df2-8318-4177-893d-4195a4d06ff2"
+        />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="contact-inputs"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="contact-inputs"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-inputs"
+          required
+        ></textarea>
+        <div class="contact-button">
+          <button class="contact-button" type="submit">
+            submit <img src="images/arrow_icon.png" alt="" />
+          </button>
+          <button class="contact-button" type="submit">
+            <a href="index.html">Home</a>
           </button>
         </div>
-        <!-- nav links -->
-        <ul class="nav-links">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
+      </form>
+      <div class="contact-right">
+        <img src="images/right_img.png" alt="" />
       </div>
-    </nav>
-    <!-- end of navbar -->
-    <!-- sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <div>
-        <button id="close-btn" class="close-btn">
-          <i class="fas fa-times"></i>
-        </button>
-        <ul class="sidebar-links">
-          <li><a href="index.html">home</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="contact.html">contact</a></li>
-        </ul>
-      </div>
-    </aside>
-    <!-- end of sidebar -->
-
-    <section class="section single-page">
-      <!-- section title -->
-      <div class="section-title">
-        <h1>contact</h1>
-        <div class="underline"></div>
-      </div>
-      <!--end of section title -->
-      <div class="section-center page-info">
-        <!-- contact page-->
-        <p>
-          If you are looking to get ahold of me, you can send me an email at
-          <a
-            style="text-transform: lowercase"
-            href="mailto:poovarasanv4444@gmail.com"
-            >@poovarasanv4444@gmai.com</a
-          >
-        </p>
-        <p>
-          You can also reach me on instagram at
-          <a
-            style="text-transform: lowercase"
-            href="https://www.instagram.com/official_poovarasan?utm_source=qr&igsh=eTV4d283Z3Brb3Fj"
-            >@official_poovarasan
-          </a>
-        </p>
-      </div>
-    </section>
+    </div>
     <!-- ############## -->
     <!-- ############## -->
     <!-- ############## -->
@@ -116,8 +108,7 @@
         </li>
         <!-- end of single item -->
       </ul>
-
-      <p>&copy; <span id="date"></span> Poovarasan. All rights reserved.</p>
+      <p>&copy; <span id="date"></span>2024 Poovarasan. All rights reserved.</p>
     </footer>
     <script src="app.js"></script>
   </body>

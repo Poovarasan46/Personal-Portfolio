@@ -66,6 +66,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  scroll-behavior: smooth;
 }
 ul {
   list-style-type: none;
@@ -401,6 +402,9 @@ About
 ===============
 */
 /* section title added to globals */
+html {
+  scroll-behavior: smooth;
+}
 .about-title {
   text-align: left;
   margin-bottom: 2rem;
@@ -597,19 +601,104 @@ Skills
 }
 /*
 =============== 
+Contact
+===============
+*/
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f0f0f0;
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #a363aa;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-inputs:focus {
+  border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+}
+.contact-button {
+  display: flex;
+  gap: 20px;
+}
+.contact-button a {
+  color: white;
+}
+.contact-left button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
+}
+.contact-left button img {
+  height: 15px;
+}
+.contact-right img {
+  width: 500px;
+}
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+  .contact-right {
+    display: none;
+  }
+}
+/*
+=============== 
+End of Contact
+===============
+*/
+/*
+=============== 
 Projects
 ===============
 */
-/* .wrapper {
-  background-color: #f0f0f0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-} */
 .project-section {
   background-color: #f0f0f0;
+  padding-bottom: 4rem;
 }
 .project-section-title {
   padding: 40px 0;
@@ -712,7 +801,6 @@ Footer
 ===============
 */
 .footer {
-  padding-bottom: 4rem;
   background: #222;
   display: grid;
   place-items: center;
@@ -720,7 +808,7 @@ Footer
 .footer .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   gap: 3rem;
   margin-bottom: 1rem;
 }
