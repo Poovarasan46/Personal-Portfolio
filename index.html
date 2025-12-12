@@ -3,314 +3,358 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-        <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css -->
+    <title>Poovarasan V</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="nav" id="nav">
-      <div class="nav-center">
-        <!-- nav header -->
-        <div class="nav-header">
-          <button class="nav-btn" id="nav-btn">
-            <i class="fas fa-bars"></i>
-          </button>
+    <input type="checkbox" id="mobile-menu" />
+
+    <input type="radio" name="nav" id="tab1" checked />
+    <input type="radio" name="nav" id="tab2" />
+    <input type="radio" name="nav" id="tab3" />
+    <input type="radio" name="nav" id="tab4" />
+    <input type="radio" name="nav" id="tab5" />
+
+    <label for="mobile-menu" class="menu-toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <aside class="sidebar">
+      <div class="profile-area">
+        <div class="avatar">
+          <img src="image/photo2.jpg" alt="Profile Picture" />
         </div>
-        <!-- nav-links -->
-        <ul class="nav-links">
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="#aboutimg">about</a>
-          </li>
-          <li>
-            <a href="contact.html">contact</a>
-          </li>
-        </ul>
+
+        <div style="margin-top: 15px">
+          <h3 style="color: #fff">Poovarasan V</h3>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0">
+            Embedded Systems & Data Analyst
+          </p>
+        </div>
       </div>
-    </nav>
-    <!-- end of navbar -->
-    <!-- sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <div>
-        <button class="close-btn" id="close-btn">
-          <i class="fas fa-times"></i>
-        </button>
-        <!-- nav-links -->
-        <ul class="sidebar-links">
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="#aboutimg">about</a>
-          </li>
-          <li>
-            <a href="contact.html">contact</a>
-          </li>
-        </ul>
-      </div>
+
+      <nav>
+        <label for="tab1" class="nav-label lbl-home">HOME</label>
+        <label for="tab2" class="nav-label lbl-exp">EXPERIENCE</label>
+        <label for="tab3" class="nav-label lbl-proj"
+          >PROJECTS & PUBLICATIONS</label
+        >
+        <label for="tab4" class="nav-label lbl-skills">SKILLS</label>
+        <label for="tab5" class="nav-label lbl-contact">CONTACT</label>
+      </nav>
     </aside>
-    <!-- end of sidebar -->
-    <!-- header -->
-    <header class="hero">
-      <div class="section-center hero-center">
-        <article class="hero-info">
-          <div class="underline"></div>
-          <h1>i'm Poovarasan</h1>
-          <h4>STUDENT</h4>
-          <a href="contact.html" class="btn hero-btn">contact</a>
-          <!-- social icons -->
-          <ul class="social-icons hero-icons">
-            <li>
-              <a
-                href="https://twitter.com/_PoovarasanV_?t=Ll22XtDNsw2Pt6tXuEuovQ&s=09"
-                class="social-icon"
-              >
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/poovarasan46/" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/official_poovarasan?utm_source=qr&igsh=eTV4d283Z3Brb3Fj"
-                class="social-icon"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </article>
-        <article class="hero-img">
-          <img
-            src="images/IMG_20211103_122607_Bokeh__01.jpg"
-            class="hero-photo"
-            alt="john doe"
-          />
-        </article>
-      </div>
-    </header>
-        <div id="aboutimg"></div>
-    <!-- end of header -->
-    <!-- about -->
-    <section class="section about">
-      <div class="section-center about-center">
-        <!-- about img -->
-        <article class="about-img">
-          <img src="./images/aboutphoto.jpg" class="hero-photo" alt="about img"  />
-        </article>
-        <!-- about info -->
-        <article class="about-info">
-          <!-- section title -->
-          <div class="section-title about-title">
-            <h2>about</h2>
-            <div class="underline"></div>
-          </div>
-          <!--end of section title -->
-          <p>
-            Hello, I am Poovarasan, currently in my first year pursuing
-            Electronics and Communication Engineering (ECE) with a
-            specialization in data science at SRM University. My academic
-            journey is marked by a keen interest in leveraging technology to
-            explore the vast realm of data science. Proficient in Python, I am
-            well-versed in its application for data manipulation, analysis, and
-            visualization. Additionally, I have a solid foundation in web
-            development, with proficiency in HTML and CSS, and I am actively
-            expanding my skills by delving into JavaScript. My academic
-            pursuits, combined with my programming expertise, reflect my
-            commitment to acquiring a diverse skill set that aligns with the
-            dynamic field of data science.
+
+    <main class="main-content">
+      <div class="scroll-wrapper">
+        <section id="section-home" class="content-section">
+          <h1>Poovarasan V.</h1>
+          <p class="subtitle">
+            IoT | Embedded Systems | PCB Design & Automation | Data Analyst
           </p>
 
-          <a href="contact.html" class="btn">contact me</a>
-        </article>
-      </div>
-    </section>
-    <!-- end of about -->
+          <div style="max-width: 600px; margin-bottom: 30px">
+            <p>
+              Hi! I'm Poovarasan V, an enthusiastic engineer who loves building
+              smart, meaningful technologies that solve real-world problems. I'm
+              currently pursuing B.Tech in Electronics & Communication
+              Engineering with a specialization in Data Science at SRM
+              University, where I blend my passion for embedded systems, IoT,
+              electronics design, and data-driven insights to create innovative
+              solutions.
+            </p>
+            <br />
+            <p>
+              I’ve worked on a wide range of projects — from non-invasive
+              medical devices, bilirubin detection prototypes, medical report
+              analyzer tools, to sensor-driven hardware designs and PCB
+              development. I enjoy transforming ideas into functioning
+              prototypes using Arduino, ESP32, PCB design tools, Verilog, and
+              Python for analytics and visualization. Beyond academics, I love
+              exploring emerging technologies, sharpening my skills in IoT
+              architectures, hardware–software integration, and electronic
+              system design, and contributing to impactful engineering projects.
+            </p>
+          </div>
 
-    <!-- skills -->
-    <section class="section skills">
-      <!-- section title -->
-      <div class="section-title">
-        <h2>skills</h2>
-        <div class="underline"></div>
-      </div>
-      <!--end of section title -->
-      <div class="section-center skills-center">
-        <article>
-          <h3>Technical Skills</h3>
-          <!-- single skill -->
-          <div class="skill">
-            <p>Python</p>
-            <div class="skill-container">
-              <div class="skill-value value-90"></div>
-              <p class="skill-text skill-text-90">90%</p>
+          <label for="tab3" class="btn">View Projects</label>
+          <label for="tab5" class="btn" style="border-color: #333; color: #fff"
+            >Contact Me</label
+          >
+        </section>
+
+        <section id="section-exp" class="content-section">
+          <h2>Experience</h2>
+
+          <div class="card">
+            <div class="card-head">
+              <span class="card-title">Research Intern</span>
+              <span class="card-tag">Dec 2024 - Present</span>
             </div>
+            <span class="card-sub">Biomedical Device R&D</span>
+            <ul>
+              <li style="color: #ccc; margin-left: 20px; margin-bottom: 5px">
+                Developing a non-invasive optical bilirubin detection device
+                focused on improving neonatal healthcare.
+              </li>
+              <li style="color: #ccc; margin-left: 20px">
+                Designing multi-wavelength LED–photodiode sensor circuits for
+                accurate optical measurement and signal analysis.
+              </li>
+              <li style="color: #ccc; margin-left: 20px">
+                Collaborating on hardware design, prototyping, and system
+                testing to validate device performance.
+              </li>
+            </ul>
           </div>
-          <!--end of  single skill -->
-          <!-- single skill -->
-          <div class="skill">
-            <p>C Program</p>
-            <div class="skill-container">
-              <div class="skill-value value-60"></div>
-              <p class="skill-text skill-text-60">60%</p>
+
+          <div class="card">
+            <div class="card-head">
+              <span class="card-title">Embedded Systems Intern</span>
+              <span class="card-tag">Apr - Jun 2025</span>
             </div>
+            <span class="card-sub">AICTE & Eduskills (Microchip)</span>
+            <ul>
+              <li style="color: #ccc; margin-left: 20px; margin-bottom: 5px">
+                Built hands-on embedded system projects and strengthened skills
+                in debugging, testing, and optimizing embedded code.
+              </li>
+              <li style="color: #ccc; margin-left: 20px">
+                Worked on hardware–software integration using Microchip
+                development modules and industry-grade tools.
+              </li>
+              <li style="color: #ccc; margin-left: 20px">
+                Gained practical exposure to microcontroller architectures and
+                real-world embedded workflows.
+              </li>
+            </ul>
           </div>
-          <!--end of  single skill -->
-          <!-- single skill -->
-          <div class="skill">
-            <p>Data Analysis and Web Scraping</p>
-            <div class="skill-container">
-              <div class="skill-value value-85"></div>
-              <p class="skill-text skill-text-85">85%</p>
+        </section>
+
+        <section id="section-proj" class="content-section">
+          <h2>Publications</h2>
+
+          <div class="card">
+            <div class="card-head">
+              <span class="card-title">(ICCSP '25)</span>
+              <a
+                class="card-tag"
+                target="_blank"
+                href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Design+of+a+Non-Invasive+Optical+Probe+for+Tissue+Characterization&btnG="
+                >Publication</a
+              >
             </div>
+            <span class="card-sub"
+              >Design of a Non-Invasive Optical Probe for Tissue
+              Characterization</span
+            >
+            <p>
+              The project involved designing and fabricating a custom PCB-based
+              optical probe incorporating LEDs at 460 nm, 540 nm, 660 nm, and
+              950 nm to enable wavelength-specific tissue characterization. The
+              team implemented multiple source–detector separations ranging from
+              3.40 mm to 9.70 mm to study depth-dependent light–tissue
+              interactions. A complete optical measurement system was developed
+              using a BPW34 photodiode, LM358 transimpedance amplifier, and
+              Arduino microcontroller for controlled LED activation and signal
+              acquisition. The system was evaluated using a skin-mimicking
+              phantom, demonstrating consistent and predictable reflectance
+              behavior across varying depths, confirming the probe’s
+              effectiveness for non-invasive tissue analysis.
+            </p>
           </div>
-          <!--end of  single skill -->
-        </article>
-        <article>
-          <h3>Webdesign & Styling</h3>
-          <!-- single skill -->
-          <div class="skill">
-            <p>HTML/CSS/JavaScript</p>
-            <div class="skill-container">
-              <div class="skill-value value-80"></div>
-              <p class="skill-text skill-text-80">80%</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-          <!-- single skill -->
-          <div class="skill">
-            <p>Bootstrap</p>
-            <div class="skill-container">
-              <div class="skill-value value-95"></div>
-              <p class="skill-text skill-text-95">95%</p>
-            </div>
-          </div>
-          <!-- end of single skill -->
-      </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- end of skills -->
-    <!--  START OF PROJECTS   -->
-    <section class="project-section">
-        <div class="project-section-title">
+        </section>
+        <section id="section-proj" class="content-section">
           <h2>Projects</h2>
-          <div class="project-underline"></div>
-        </div>
-      <div class="container project-section-center">
-        <div class="card dark-bg">
-          <h3>Amazon Price Tracker</h3>
-          <p>
-            Amazon price tracker using Python is to monitor 
-            and notify users of price changes for products 
-            on Amazon, enabling them to make informed purchasing decisions.
-          </p>
-          <a href="https://github.com/Poovarasan46/Amazon-Price-tracker" target="_blank"><button class="boton">Source Code</button></a>
-        </div>
-        <div class="card light-bg">
-          <h3>Rain Alert</h3>
-          <p>
-            Rain alert using Python is to provide daily notifications 
-            about potential rain and sending daily 
-            notifications about the likelihood of rain helping users plan their day accordingly.
-            
-          </p>
-          <a href="https://github.com/Poovarasan46/Rain-Alert" target="_blank"><button class="boton-l">Source Code</button></a>
-        </div>
-        <div class="card light-bg">
-          <h3>YT Audio/Video Downloader</h3>
-          <p>
-            YouTube audio and video downloader using Python is to allow 
-            users to download and save audio and video content from YouTube 
-            for offline access.
-          </p>
-          <a href="https://github.com/Poovarasan46/Youtube-Audio-Video-Downloader" target="_blank"><button class="boton-l">Source Code</button></a>
-        </div>
-        <div class="card dark-bg">
-          <h3>Web Scrapper</h3>
-          <p>
-            webscrapping using python
-            Automating data collection and storage from websites to Google Sheets, 
-            Enhancing decision-making with real-time data updates from web sources
-          </p>
-          <a href="https://github.com/Poovarasan46/web-scrapper" target="_blank"><button class="boton">Source Code</button></a>
-        </div>
-      </div>
-    </section>
-    <!--  END OF PROJECTS   -->
-    <!-- connect -->
-    <section class="connect">
-      <video
-        controls
-        autoplay
-        muted
-        loop
-        class="video-container"
-        poster="./images/project-1.jpeg"
-      >
-        <source src="images/connect.mp4" type="video/mp4" />
-        Sorry, your browser does not support embedded videos
-      </video>
-      <div class="video-banner">
-        <!-- section title -->
-        <div class="section-title">
-          <h2>let's get in touch</h2>
-          <div class="underline"></div>
-        </div>
-        <!--end of section title -->
-        <p class="video-text">
-          "Explore my digital presence, where ideas meet pixels. Navigate to my
-          websites, the hub of innovation and collaboration. Connect with me
-          effortlessly, as every click brings you closer. Let the virtual
-          dialogue begin."
-        </p>
-        <a href="contact.html" class="btn">contact me</a>
-      </div>
-    </section>
-    <!-- end of connect -->
-    <!-- footer -->
-    <footer class="footer">
-      <!-- social icons -->
-      <ul class="social-icons">
-        <li>
-          <a
-            href="https://twitter.com/_PoovarasanV_?t=Ll22XtDNsw2Pt6tXuEuovQ&s=09"
-            class="social-icon"
-          >
-            <i class="fa-brands fa-x-twitter" style="color: #e9b949"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/poovarasan46/" class="social-icon">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/official_poovarasan?utm_source=qr&igsh=eTV4d283Z3Brb3Fj"
-            class="social-icon"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
 
-      <p>&copy; <span id="date"></span> Poovarasan. all rights reserved</p>
-    </footer>
-    <script src="app.js"></script>
+          <div class="card">
+            <div class="card-head">
+              <span class="card-title">Class-D Switching Amplifier</span>
+              <a
+                href="https://github.com/Ganesh249/Class-D-Switching-Amplifier"
+                target="_blank"
+                class="card-tag"
+                >Github</a
+              >
+            </div>
+            <p>
+              This project focuses on designing and implementing a Class-D
+              switching amplifier, an audio amplification system that uses
+              high-frequency PWM (pulse-width modulation) to achieve high
+              efficiency and low power loss. The amplifier operates by
+              converting the input audio signal into a PWM waveform, driving
+              switching MOSFETs that operate fully ON or OFF, significantly
+              reducing heat dissipation compared to linear amplifiers. The
+              amplified PWM signal is then passed through an LC low-pass filter,
+              which reconstructs the original audio waveform at a higher power
+              level, enabling clear and efficient sound output. This design
+              highlights the principles of switching amplification, efficient
+              power conversion, and practical audio system implementation.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <span class="card-title"
+                >Predictive Maintenance System with Digital Twin on ESP32</span
+              >
+              <span class="card-tag">Hardware</span>
+            </div>
+            <p>
+              As a team, we developed a low-cost predictive maintenance system
+              that uses an ESP32 microcontroller to create a real-time digital
+              twin of industrial machinery. The setup continuously monitors
+              vibration, temperature, and current using the MPU6050, thermistor,
+              and ACS712 sensors, and runs a TinyML regression model directly on
+              the ESP32 to predict healthy operating behavior. By comparing
+              real-time sensor readings with digital-twin predictions, the
+              system accurately identifies anomalies such as imbalance,
+              overheating, or electrical overload without requiring cloud
+              computing. The project demonstrates efficient edge-based fault
+              detection with ~96% accuracy, low latency (~180 ms), and minimal
+              power consumption, offering an affordable Industry 4.0 maintenance
+              solution for small-scale industries.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <span class="card-title">Real Estate Rental Web Scraper</span>
+              <a
+                href="https://github.com/Poovarasan46/web-scrapper"
+                target="_blank"
+                class="card-tag"
+                >Github</a
+              >
+            </div>
+            <p>
+              This project involved building an automated real estate rental web
+              scraper that collects key property details such as pricing,
+              location, and amenities using BeautifulSoup and Selenium. The
+              scraper navigates through listing pages, extracts structured data,
+              and exports the results directly into Google Sheets for easy
+              access and analysis. This system significantly improves the
+              efficiency and accuracy of rental data collection, making it
+              useful for market research, trend analysis, and personal
+              decision-making.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-head">
+              <span class="card-title"
+                >Ultrasonic Distance Measurement System</span
+              >
+              <span class="card-tag">Hardware</span>
+            </div>
+            <p>
+              This project involved building an automated real estate rental web
+              scraper that collects key property details such as pricing,
+              location, and amenities using BeautifulSoup and Selenium. The
+              scraper navigates through listing pages, extracts structured data,
+              and exports the results directly into Google Sheets for easy
+              access and analysis. This system significantly improves the
+              efficiency and accuracy of rental data collection, making it
+              useful for market research, trend analysis, and personal
+              decision-making.
+            </p>
+          </div>
+        </section>
+
+        <section id="section-skills" class="content-section">
+          <h2>Technical Skills</h2>
+
+          <p
+            style="color: var(--accent); font-size: 0.9rem; margin-bottom: 10px"
+          >
+            PROGRAMMING
+          </p>
+          <div class="grid">
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">Embedded C</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+          </div>
+          <br />
+          <p
+            style="color: var(--accent); font-size: 0.9rem; margin-bottom: 10px"
+          >
+            EMBEDDED & HARDWARE
+          </p>
+          <div class="grid">
+            <div class="skill">Arduino</div>
+            <div class="skill">ESP32</div>
+            <div class="skill">Microcontrollers</div>
+            <div class="skill">Sensors</div>
+            <div class="skill">PCB Design</div>
+          </div>
+          <br />
+          <p
+            style="color: var(--accent); font-size: 0.9rem; margin-bottom: 10px"
+          >
+            FRAMEWORKS / LIBRARIES
+          </p>
+          <div class="grid">
+            <div class="skill">Flask</div>
+            <div class="skill">Selenium</div>
+            <div class="skill">BeautifulSoup</div>
+          </div>
+          <br />
+          <p
+            style="color: var(--accent); font-size: 0.9rem; margin-bottom: 10px"
+          >
+            TOOLS
+          </p>
+          <div class="grid">
+            <div class="skill">Kicad</div>
+            <div class="skill">EasyEDA</div>
+            <div class="skill">LTspice</div>
+            <div class="skill">Arduino IDE</div>
+            <div class="skill">VS Code</div>
+            <div class="skill">Pycharm</div>
+            <div class="skill">Git</div>
+            <div class="skill">Google Colab</div>
+          </div>
+        </section>
+
+        <section id="section-contact" class="content-section">
+          <h2>Contact</h2>
+          <p>
+            I'm always open to collaborations, internships, research
+            opportunities, or technical discussions. Feel free to reach out
+            using the details below.
+          </p>
+
+          <div class="card">
+            <p>
+              <strong style="color: var(--accent)">EMAIL</strong><br />
+              <a
+                href="mailto:poov4rasan@gmail.com"
+                style="color: #fff; text-decoration: none"
+                >poov4rasan@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <div style="margin-top: 30px">
+            <a
+              href="https://linkedin.com/in/poovarasan46"
+              target="_blank"
+              class="btn"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/Poovarasan46"
+              target="_blank"
+              class="btn"
+              style="border-color: #444; color: #ccc"
+              >GitHub</a
+            >
+          </div>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
